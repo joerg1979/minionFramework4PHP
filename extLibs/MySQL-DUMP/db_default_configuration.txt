@@ -1,0 +1,4 @@
+Default SQL-Database Settings:
+    define('DB_NAME', "miniondb");
+    define('DB_USER', "minion");
+    define('DB_PASSWORD', "0511");
