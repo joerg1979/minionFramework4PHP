@@ -30,6 +30,7 @@ SYSTEM\HTML::printBody();
 //echo '<p class=lead">Ein Basis-System für PHP incl. MySQL, Sessions & Security<br />'
 //   . 'Bootstrap included cia CDN</p>';
 //echo '</div></div></div>';
+SYSTEM\HTML::printFooter();
 
 SYSTEM\HTML::printFoot();
 

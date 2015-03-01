@@ -9,10 +9,10 @@
  * Code by GallileoComputing: commented with #-tag
  * Code by JS: commented with //-tag
  * 
- * File: class.Security.php
+ * File: class.Logging.php
  * Job: implements logging functionality
  * 
- * actual: 621 - 14.6 Debugging
+ * actual: 621 - 14.6 Logging
  */
 
 namespace SYSTEM;
