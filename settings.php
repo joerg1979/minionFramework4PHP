@@ -52,9 +52,9 @@
     define('META_DATE', '2015-03-01T09:00:00+1:00');
 
 #MY personal css and js files
-    define('MY_CSS', PROJECT_DOCUMENT_ROOT."/css/my.css");
-    define('MY_CSS_THEME', PROJECT_DOCUMENT_ROOT."/css/my-theme.css");
-    define('MY_JS', PROJECT_DOCUMENT_ROOT."/js/my.js");
+    define('MY_CSS', PROJECT_HTTP_ROOT."/css/my.css");
+    define('MY_CSS_THEME', PROJECT_HTTP_ROOT."/css/my-theme.css");
+    define('MY_JS', PROJECT_HTTP_ROOT."/js/my.js");
   
 #Constant for HTML 4 without Bootstrap
 /*
@@ -73,6 +73,7 @@
 //  define(BOOTSTRAP_ON, 5)
     define('BOOTSTRAP_ON', TRUE);
     define('BS_DOCTYPE5', '<!DOCTYPE html>');
+    
     define('BOOTSTRAP_CSS_CDN', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css');
     define('BOOTSTRAP_CSSTHEME_CDN', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css');
 

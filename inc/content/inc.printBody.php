@@ -7,10 +7,15 @@
             <article class="col-md-12" style="border: 1px black dashed">
                 <br><hr />
                 <h2>Content Area [Row 1]</h2>
-                <div class="col-md-8 col-md-offset-2" style="text-align: left; height: 450px; width: 75%; border: 1px blue double">
+                <div class="col-md-8" style="text-align: left; height: 550px; width: 95%; border: 1px blue double">
                 
                     <p class="lead text-center alert-warning">Include your BusinesLogic here<em>(inc.printBody.php)</em></p>
-                    <?php include_once PROJECT_DOCUMENT_ROOT.'/inc/content/pdo.allUser.php';?>
+<?php   if($position == ''){
+                              include_once PROJECT__ROOT.'/inc/content/pdo.allUser.php';
+                           } else {
+                               include_once PROJECT_HTTP_ROOT.$position;
+                            }
+                    ?>
                 </div>                                        
             </article>
         </div>  <!--ende INNER ROW -->

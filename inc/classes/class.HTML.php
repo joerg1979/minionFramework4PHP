@@ -35,7 +35,7 @@ class HTML{
             // Bootstrapping via CDN
             echo '<link rel="stylesheet" href="'.BOOTSTRAP_CSS_CDN.'">';
             echo '<link rel="stylesheet" href="'.BOOTSTRAP_CSSTHEME_CDN.'">';
-            
+            echo '<link rel="stylesheet" href="'.MY_CSS.'">';
 
         }
         elseif(BOOTSTRAP_ON === 5){
@@ -69,7 +69,7 @@ class HTML{
         echo '</head>';
     }
     
-    public static function printBody($css = NULL, $withConsole = TRUE){
+    public static function printBody($position='', $css = NULL, $withConsole = TRUE){
        
         //Start longVersion if-css
         /*
@@ -103,6 +103,8 @@ class HTML{
     
     public static function printFoot(){
         if(BOOTSTRAP_ON === TRUE){
+            echo '<script src="'.PROJECT_HTTP_ROOT.'/inc/js/default.js" '
+                .'type="text/javascript"></script>';
             echo '<script src="'.JQUERY_CDN.'"></script>';
             echo '<script src="'.BOOTSTRAP_JQUERY_CDN.'"></script>';
         } 
