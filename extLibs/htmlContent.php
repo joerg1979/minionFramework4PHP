@@ -17,17 +17,15 @@
                     <ul class="nav nav-pills nav-stacked">
                         <li role="presentation" class="active"><a href="./index.php">Home</a></li>
                         <li role="presentation"><a href="./index.php">My Account</a></li>
-                         <li role="presentation"><a href="./index.php">Dashboard</a></li>
+                        <li role="presentation"><a href="./index.php">Dashboard</a></li>
                         <li role="presentation"><a href="./index.php">Something else</a></li>
                         <li role="presentation"><a href="./index.php">Informations</a></li>
-                         <li role="presentation"><a href="./index.php">Descriptions</a></li>
+                        <li role="presentation"><a href="./index.php">Descriptions</a></li>
                         <li role="presentation"><a href="./index.php">User Settings</a></li>
                         <li role="presentation"><a href="./index.php">Other Links</a></li>
-                    
                     </ul>
                 </p>
-                <hr />
-            
+            <hr />
         </aside><!--ende LEFT NAVIGATION -->
         <!-- END of LEFT-NAVIGATION Area --> 
         <!---- Begin CONTAINER cnt02_01 (included)---->

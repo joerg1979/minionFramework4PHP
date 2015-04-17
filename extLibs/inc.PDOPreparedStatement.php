@@ -7,7 +7,7 @@ if(!isset($pdo) && PDO_ON == TRUE){
 } 
 $sql = 'SELECT * FROM users WHERE user_nickname LIKE :name';
 $pdo->preparedStatement($sql);
-$params = array('name'=>'%jS%');
+$params = array('name'=>'%JS%');
 $data = $pdo->execute($params);
 
 foreach ($data as $userAccount) {

@@ -34,8 +34,11 @@ class HTML{
             // Bootstrapping via CDN
             echo '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">';
             echo '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">';
-            
 
+            
+            
+            echo '<script src="./inc/libs/js/JS_Version.js"></script>'; 
+            echo '<script src="./inc/libs/js/default.js"></script>';
         }
         elseif(BOOTSTRAP_ON === 5){
             echo '<!DOCTYPE html>';
@@ -90,6 +93,13 @@ class HTML{
         if(BOOTSTRAP_ON === TRUE){
             echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>';
             echo '<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>';
+           //CDN - jQuery
+//            echo '<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>';
+//            echo '<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>';
+           // locale jQuery
+//            echo '<script src="./inc/libs/js/jquery-VER.js"></script>';
+//            echo '<script src="./inc/libs/js/jquery_Default.js"></script>';
+            
         } 
         else{
             echo "</body></html>";
