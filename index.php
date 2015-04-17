@@ -20,7 +20,7 @@ require_once 'common.php';
 
 #Using staticFunctions of class.HTML.php
 SYSTEM\HTML::printHead();
-SYSTEM\HTML::printBody();
+SYSTEM\HTML::printBody('/inc/content/inc.klr.php');
 //      Non-Bootstrap D E M O - CONTENT
 //Some useless PageContent
 //echo '<div class="container-fluid">';
@@ -30,6 +30,7 @@ SYSTEM\HTML::printBody();
 //echo '<p class=lead">Ein Basis-System für PHP incl. MySQL, Sessions & Security<br />'
 //   . 'Bootstrap included cia CDN</p>';
 //echo '</div></div></div>';
+SYSTEM\HTML::printFooter();
 
 SYSTEM\HTML::printFoot();
 

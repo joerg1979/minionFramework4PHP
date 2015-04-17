@@ -1,0 +1,35 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17.04.2015, 11:45:42
+    Author     : s308
+*/
+
+.wert{
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.zahlwert{
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+    text-align: right;
+}
+
+.diffwert{
+    color: black;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: right;
+}
+
+.diff{
+    color: black;
+    font-style: italic;
+    font-weight: lighter;
+}
