@@ -33,3 +33,12 @@ and open the template in the editor.
     font-style: italic;
     font-weight: lighter;
 }
+.klr{
+    text-align: left;
+    
+    
+}
+#table > .klr {
+    width: 90%;
+    
+}
