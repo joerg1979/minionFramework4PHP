@@ -1,4 +1,5 @@
 <?php 
+include 'inc.f.klr.php';
 ?>
 <form action="" method="POST">
     <table border="1" class="col-lg-offset-2 col-md-8 klr">

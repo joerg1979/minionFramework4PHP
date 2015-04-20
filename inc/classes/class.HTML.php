@@ -69,7 +69,7 @@ class HTML{
         echo '</head>';
     }
     
-    public static function printBody($position='', $css = NULL, $withConsole = TRUE){
+    public static function printBody($position='index.php', $css = NULL, $withConsole = TRUE){
        
         //Start longVersion if-css
         /*
@@ -93,12 +93,12 @@ class HTML{
         }
     }
     
+    public static function printContent($position='index.php'){
+        include_once PROJECT_DOCUMENT_ROOT.'/inc/content/'.$position;
+    }
+    
     public static function printFooter(){
-        include PROJECT_DOCUMENT_ROOT.'/inc/content/inc.printFooter.php';
-        
-//        include_once ($def === TRUE)
-//                ? PROJECT_DOCUMENT_ROOT.'/inc/content/inc.printFooter.php' 
-//                : PROJECT_DOCUMENT_ROOT.$def;      
+        include PROJECT_DOCUMENT_ROOT.'/inc/content/inc.printFooter.php';     
     }
     
     public static function printFoot(){
@@ -108,9 +108,7 @@ class HTML{
             echo '<script src="'.JQUERY_CDN.'"></script>';
             echo '<script src="'.BOOTSTRAP_JQUERY_CDN.'"></script>';
         } 
-        else{
-            echo "</body></html>";
-        }
+        echo "</body></html>";
     }
     
     public static function printArray($array = array()){

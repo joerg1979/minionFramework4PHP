@@ -20,7 +20,11 @@ require_once 'common.php';
 
 #Using staticFunctions of class.HTML.php
 SYSTEM\HTML::printHead();
-SYSTEM\HTML::printBody('/inc/content/inc.klr.php');
+SYSTEM\HTML::printBody('index.php');
+SYSTEM\HTML::printContent('inc.printBodyA.php');
+SYSTEM\HTML::printContent('pdo.allUser.php');
+SYSTEM\HTML::printContent('inc.printBodyB.php');
+
 //      Non-Bootstrap D E M O - CONTENT
 //Some useless PageContent
 //echo '<div class="container-fluid">';

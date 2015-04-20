@@ -15,14 +15,14 @@
             <hr />
                 <p>
                     <ul class="nav nav-pills nav-stacked">
-                        <li role="presentation" class="active"><a href="./index.php">Home</a></li>
-                        <li role="presentation"><a href="./index.php">My Account</a></li>
-                         <li role="presentation"><a href="./index.php">Dashboard</a></li>
-                        <li role="presentation"><a href="./index.php">Something else</a></li>
-                        <li role="presentation"><a href="./index.php">Informations</a></li>
-                         <li role="presentation"><a href="./index.php">Descriptions</a></li>
-                        <li role="presentation"><a href="./index.php">User Settings</a></li>
-                        <li role="presentation"><a href="./index.php">Other Links</a></li>
+                        <li role="presentation" class="<?php echo ($position == "index.php")?"active":""; ?>"><a href="index.php">Home</a></li>
+                        <li role="presentation" class="<?php echo ($position == "./index2.php")?"active":""; ?>"><a href="./index.php">My Account</a></li>
+                         <li role="presentation" class="<?php echo ($position == "./index3.php")?"active":""; ?>"><a href="./index.php">Dashboard</a></li>
+                        <li role="presentation" class="<?php echo ($position == "./index4.php")?"active":""; ?>"><a href="./index.php">Something else</a></li>
+                        <li role="presentation" class="<?php echo ($position == "./index5.php")?"active":""; ?>"><a href="./index.php">Informations</a></li>
+                         <li role="presentation" class="<?php echo ($position == "./index6.php")?"active":""; ?>"><a href="./index.php">Descriptions</a></li>
+                        <li role="presentation" class="<?php echo ($position == "./index7.php")?"active":""; ?>"><a href="./index.php">User Settings</a></li>
+                        <li role="presentation" class="<?php echo ($position == "klr.php")?"active":""; ?>"><a href="klr.php">KLR</a></li>
                     
                     </ul>
                 </p>
@@ -31,13 +31,3 @@
         </aside><!--ende LEFT NAVIGATION -->
         <!-- END of LEFT-NAVIGATION Area --> 
         <!---- Begin CONTAINER cnt02_01 (included)---->
-       <?php
-            include_once PROJECT_DOCUMENT_ROOT.'/inc/content/inc.printBody.php';
-            
-        ?>
-        <!---- END CONTAINER cnt02_01 (included)---->
-    </section><!--/.section row -->   
-</div><!-- /.container cnt02 -->
- <!-- END of CONTAINER cnt02 --> 
- <!-- END of Content Area-->
- 

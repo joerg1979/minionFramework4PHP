@@ -17,13 +17,13 @@
 namespace SYSTEM\DATABASE;
 
 class MySQL{
-    public $MySQLiObj;
+    public $MySQLObj;
     public $lastSQLQuery;
     public $lastSQLStatus;
     
     public function __construct($server, $user, $password, $db, $port) {
         #Create new MySQLiObj
-        $this->MySQLiObj = new \mysqli($server, $user, $password, $db, $port);
+        $this->MySQLObj = new \mysqli($server, $user, $password, $db, $port);
         
         if(mysqli_connect_errno()){
             echo "Verbindung zum MySQL-Server: <b>\"$server\"</b>";
@@ -38,7 +38,7 @@ class MySQL{
     
     public function __destruct() {
         # ensure closing MySQL-Connection
-        $this->MySQLiObj->close();
+        $this->MySQLObj->close();
     }
     
     public function query($sqlQuery, $resultset = FALSE){
@@ -46,7 +46,7 @@ class MySQL{
         $this->lastSQLQuery = $sqlQuery;
         #Plcaeholder for Logging function doLog()
         # $this->doLog($sqlQuery);
-        $result = $this->MySQLiObj->query($sqlQuery);
+        $result = $this->MySQLObj->query($sqlQuery);
         
         #Testing $resultset is set
         if($resultset == TRUE){
@@ -63,7 +63,7 @@ class MySQL{
         return $return;
     }
     public function lastSQLError(){
-        return $this->MySQLiObj->error;
+        return $this->MySQLObj->error;
     }
     public function escapeString($value){
         
@@ -86,7 +86,7 @@ class MySQL{
         }
         else {
             $array = $array();
-            while ($line = $ResultObj->fetch_array(MYSQLI_ASSOC)) {
+            while ($line = $ResultObj->fetch_array(MYSQL_ASSOC)) {
                 array_push($array, $line);
             }
             $this->lastSQLStatus = TRUE;
