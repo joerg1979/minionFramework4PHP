@@ -6,9 +6,5 @@
     <article class="col col-md-9">
         <div class="row" style="text-align: center; border: 1px red solid"> 
             <article class="col-md-12" style="border: 1px black dashed">
-                <br><hr />
-                <h2>Content Area [Row 1]</h2>
-                <div class="col-md-8" style="text-align: left; height: 650px; width: 95%; border: 1px blue double">
-                
-                    <p class="lead text-center alert-warning">Include your BusinesLogic here<em>(inc.printBody.php)</em></p>
-                   
+                <br />
+                <div class="col-md-8" style="text-align: left; height: 550px; width: 100%; border: 1px blue double">                   

@@ -2,13 +2,14 @@
 include 'inc.f.parkschein.php';
 ?>
 <form action="" method="POST">
-   <table style="text-align: center"border="1" class="col-lg-offset-2 col-md-8 klr">
+    <h2 class="lead text-center alert-warning">Parkscheinautomat</h2>
+   <table style="text-align: center" border="1" class="col-lg-offset-2 col-md-8 klr">
         <thead>
-            <th colspan="3">Geldeinwurf</th>
+        <th colspan="3" class="text-center">Bitte werfen Sie Münzen ein.</th>
         </thead>
         <tbody>
         <tr>
-            <td class="wert"><button class="btn-block" id="200">2.00 Euro</button></td>
+            <td class="wert"><input type="submit" value="2.00 Euro" class="btn-block" id="200" /></td>
             <td class="wert"></td>
             <td class="wert"><button class="btn-block" id="100">1.00 Euro</button></td>
         </tr>
@@ -18,15 +19,15 @@ include 'inc.f.parkschein.php';
             <td class="wert"><button class="btn-block" id="10">0.10 Euro</button></td>
         </tr>
         <tr>
-            <td class="wert"><button class="btn-block" id="05">0.05 Euro</button></td>
-            <td class="wert"><button class="btn-block" id="02">0.02 Euro</button></td>
-            <td class="wert"><button class="btn-block" id="01">0.01 Euro</button></td>
+            <td class="wert"><button class="btn-block" id="5">0.05 Euro</button></td>
+            <td class="wert"><button class="btn-block" id="2">0.02 Euro</button></td>
+            <td class="wert"><button class="btn-block" id="1">0.01 Euro</button></td>
         </tr>
         <tr>
             <td colspan="3"> <br></td>
         </tr>
         <tr>
-            <th colspan="3"><button  class="btn-block" id="00">Ausländische Münze</button></th>
+            <th colspan="3"><button class="btn-block" id="0">Ausländische Münze</button></th>
         <tr>
         <tr>
             <td colspan="3"><br> </td>
@@ -43,11 +44,12 @@ include 'inc.f.parkschein.php';
         <tr>
             <td class="diff"><button  class="btn-block" id="gr">Geldrückgabe</button></td>
             <td><br></td>
-            <td><button  class="btn-block" id="pd">Parkschein drucken</button></td>
+            <td><input type="submit" class="btn-block" id="pd" value="Parkschein drucken" /></td>
         </tr>
         <tr>
             <td colspan="3"><br> </td>
         </tr>
+        <input type="hidden" id="hidden" value="hidden" name="hidden"/>
         </form>
         <tr>
         <form name="reload" action="" method="GET">
@@ -55,9 +57,12 @@ include 'inc.f.parkschein.php';
         </form>
         </tr>
     </tbody>
-</table>
-    <div>
-        <p>Ihr Pakrticket vom <?php date('YYYY-MM-DD');?></p>
-        <p>Ihre Kosten: <?php echo $summe;?> Euro</p>
-        <p>Ihre Parkdauer: <?php echo ($summe/50*15);?> Minuten</p>
+</table> 
+    <div class="col-md-12 parkschein">
+        <?php 
+        if($_POST) {
+            druckeParkschein($summe);
+        }
+        ?>
     </div>
+   
