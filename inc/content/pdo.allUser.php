@@ -29,3 +29,10 @@ if(!$data){
 
     }
 }
+//$sql = "SELECT name, gehalt\n"
+//    . "FROM mitarbeiter, gehaltsgruppe \n"
+//    . "WHERE mitarbeiter.gehaltsgruppe = gehaltsgruppe.gruppen_ID\n"
+//    . "	AND	gehalt > (SELECT gehalt\n"
+//    . " FROM mitarbeiter, gehaltsgruppe\n"
+//    . " WHERE gehaltsgruppe = gruppen_ID\n"
+//    . " AND name = \'Laufer\')";
