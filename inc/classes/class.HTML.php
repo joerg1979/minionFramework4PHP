@@ -46,7 +46,7 @@ class HTML{
             echo '<meta charset="'.CHARSET.'">';
             echo '<link rel="stylesheet" type="text/css" href="'
                 .PROJECT_HTTP_ROOT.'/inc/css/default.css">';
-            echo '<script src="'.PROJECT_HTTP_ROOT.'/inc/js/default.js" '
+            echo '<script src="'.PROJECT_HTTP_ROOT.'/js/default.js" '
                 .'type="text/javascript"></script>';
         } 
         else {
@@ -58,7 +58,7 @@ class HTML{
                 .'charset='.CHARSET.'">'."\n";
             echo '<link rel="stylesheet" type="text/css" href="'
                 .PROJECT_HTTP_ROOT.'/inc/css/default.css.php">';
-            echo '<script src="'.PROJECT_HTTP_ROOT.'/inc/js/default.js" '
+            echo '<script src="'.PROJECT_HTTP_ROOT.'/js/default.js" '
                 .'type="text/javascript"></script>';
         }
         
@@ -103,7 +103,7 @@ class HTML{
     
     public static function printFoot(){
         if(BOOTSTRAP_ON === TRUE){
-            echo '<script src="'.PROJECT_HTTP_ROOT.'/inc/js/default.js" '
+            echo '<script src="'.PROJECT_HTTP_ROOT.'/js/default.js" '
                 .'type="text/javascript"></script>';
             echo '<script src="'.JQUERY_CDN.'"></script>';
             echo '<script src="'.BOOTSTRAP_JQUERY_CDN.'"></script>';
