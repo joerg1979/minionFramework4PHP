@@ -20,6 +20,7 @@ require_once 'common.php';
 
 #Using staticFunctions of class.HTML.php
 SYSTEM\HTML::printHead();
+#SYSTEM\HTML::printNavi();
 SYSTEM\HTML::printBody('index.php');
 SYSTEM\HTML::printContent('inc.printBodyA.php');
 SYSTEM\HTML::printContent('pdo.allUser.php');

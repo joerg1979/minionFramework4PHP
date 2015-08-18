@@ -18,7 +18,7 @@
 //  error_reporting(E_STRICT);       deprecated Functions shown
 
 #Debugging-Mode TRUE shows Console
-    define('DEBUG',TRUE);
+    define('DEBUG',FALSE);
 
 /*
  * MySQL-Database Connection-Settings

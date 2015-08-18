@@ -69,6 +69,10 @@ class HTML{
         echo '</head>';
     }
     
+    public static function printNavi($position = 'mainNav.php', $css = NULL) {
+        require_once (PROJECT_DOCUMENT_ROOT.'/'.$positon);
+    }
+    
     public static function printBody($position='index.php', $css = NULL, $withConsole = TRUE){
        
         //Start longVersion if-css
